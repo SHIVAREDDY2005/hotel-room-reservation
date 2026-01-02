@@ -1,16 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  padding: 8px;
+  width: 180px;
+}
+
+.controls button {
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .floor {
   display: flex;
-  margin: 5px;
-}
-.room {
-  width: 50px;
-  height: 40px;
-  border: 1px solid #444;
-  margin: 2px;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 6px;
 }
+
+.room {
+  width: 55px;
+  height: 40px;
+  border: 1px solid #333;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dff0d8;
+  font-size: 13px;
+}
+
 .booked {
   background: #e74c3c;
   color: white;
