@@ -13,3 +13,22 @@ function initHotel() {
     }
   }
 }
+function renderHotel() {
+  const container = document.getElementById("hotel");
+  container.innerHTML = "";
+
+  for (let f = 10; f >= 1; f--) {
+    let row = document.createElement("div");
+    row.className = "floor";
+
+    hotel[f].forEach(room => {
+      let box = document.createElement("div");
+      box.className = "room";
+      if (room.booked) box.classList.add("booked");
+      box.innerText = room.roomNo;
+      row.appendChild(box);
+    });
+
+    container.appendChild(row);
+  }
+}
