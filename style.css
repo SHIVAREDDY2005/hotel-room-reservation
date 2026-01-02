@@ -1,0 +1,17 @@
+.floor {
+  display: flex;
+  margin: 5px;
+}
+.room {
+  width: 50px;
+  height: 40px;
+  border: 1px solid #444;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.booked {
+  background: #e74c3c;
+  color: white;
+}
